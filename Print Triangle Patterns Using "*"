@@ -1,0 +1,22 @@
+
+n = 5
+# 1. Lower Triangular Pattern
+print("Lower Triangular Pattern:")
+for i in range(1, n + 1):
+    print("* " * i)
+print("\n")
+
+# 2. Upper Triangular Pattern
+print("Upper Triangular Pattern:")
+for i in range(n, 0, -1):
+    spaces = "  " * (n - i)
+    stars = "* " * i
+    print(spaces + stars)
+print("\n")
+
+# 3. Pyramid Pattern
+print("Pyramid Pattern:")
+for i in range(n):
+    spaces = "  " * (n - i - 1)
+    stars = "* " * (2 * i + 1)
+    print(spaces + stars)
